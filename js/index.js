@@ -3,8 +3,8 @@ function updateMap(){
 
     fetch("../data.json")
     .then(response => response.json())
-    .then(rsp =>{
-        rsp.data.forEach(element => {
+    .then(data =>{
+        data.data.forEach(element => {
             longitude = element.longitude;
             latitude = element.latitude;
             cases = element.infected;
